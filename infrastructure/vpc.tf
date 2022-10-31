@@ -1,5 +1,7 @@
-data "aws_availability_zones" "available" {
-  state = "available"
+# No acces testing commenting out data call
+
+# data "aws_availability_zones" "available" {
+#  state = "available"
 
   filter {
     name   = "opt-in-status"
