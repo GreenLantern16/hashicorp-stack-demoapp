@@ -20,7 +20,7 @@ module "vpc" {
   name             = var.name
   cidr             = var.vpc_cidr_block
  # Testing revert to:   azs = data.aws_availability_zones.available.names
-  azs              = us-east-1, us-east-2
+  azs              = us-east-2
   private_subnets  = slice(local.subnets, 0, 3)
   public_subnets   = slice(local.subnets, 3, 6)
   database_subnets = slice(local.subnets, 6, 9)
