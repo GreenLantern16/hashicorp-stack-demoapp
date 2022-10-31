@@ -7,7 +7,7 @@
     name   = "opt-in-status"
     values = ["opt-in-not-required"]
   }
-}
+#}
 
 locals {
   subnets = cidrsubnets("10.0.0.0/16", 8, 8, 8, 8, 8, 8, 8, 8, 8)
