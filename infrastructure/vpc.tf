@@ -1,4 +1,4 @@
-# No acces testing commenting out data call
+#Hardcoding zones due to permission. 
 
  data "aws_availability_zones" "available" {
   state = "available"
